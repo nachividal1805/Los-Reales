@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Reales | Previa Colo-Colo vs Ñublense</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,700&family=Teko:wght@600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            gold: '#D4AF37',
+                            red: '#D91A2A',
+                            dark: '#0A0A0B',
+                            card: '#141418',
+                            silver: '#E5E7EB'
+                        }
+                    },
+                    fontFamily: {
+                        header: ['Teko', 'sans-serif'],
+                        sans: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-brand-dark text-white font-sans antialiased overflow-x-hidden selection:bg-brand-gold selection:text-black">
+
+    <!-- Header / Navbar -->
+    <header class="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="flex items-center gap-2">
+                <span class="text-4xl font-header tracking-wider text-brand-gold uppercase">LOS REALES</span>
+                <span class="bg-brand-red text-white text-xs font-bold px-2 py-0.5 rounded uppercase tracking-widest">Deportes</span>
+            </a>
+            <nav class="hidden md:flex items-center gap-6 text-sm font-semibold uppercase tracking-wider">
+                <a href="#noticias" class="hover:text-brand-gold transition-colors">Noticias</a>
+                <a href="#video-previa" class="hover:text-brand-gold transition-colors">Previa</a>
+                <a href="#juego" class="hover:text-brand-gold transition-colors">Desafío Tarjetas</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section con Video -->
+    <section class="relative min-h-screen flex items-center justify-center pt-20 pb-12 overflow-hidden hero-gradient">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center z-10">
+            <div class="lg:col-span-7 space-y-6 text-left">
+                <div class="inline-flex items-center gap-2 px-3 py-1 bg-white/10 border border-brand-gold/40 rounded-full text-brand-gold text-xs font-bold uppercase tracking-widest">
+                    <span class="w-2 h-2 rounded-full bg-brand-red animate-ping"></span>
+                    Liga de Primera 2026 • Fecha 27
+                </div>
+                <h1 class="text-5xl sm:text-7xl font-header font-extrabold uppercase leading-none tracking-tight">
+                    COLO-COLO A UN PASO DE LA <span class="gold-gradient-text">ESTRELLA 35</span>
+                </h1>
+                <p class="text-gray-300 text-lg max-w-2xl font-light leading-relaxed">
+                    El "Cacique" busca abrochar el campeonato en el Estadio Bicentenario Nelson Oyarzún frente a Ñublense. Revisa la previa completa, las declaraciones clave y demuestra tus conocimientos en el desafío interactivo.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-2">
+                    <a href="#noticias" class="px-6 py-3 bg-brand-gold text-black font-bold uppercase rounded-lg shadow-lg shadow-brand-gold/20 hover:bg-yellow-400 transition-all transform hover:-translate-y-1">
+                        Leer noticias
+                    </a>
+                    <a href="#juego" class="px-6 py-3 bg-transparent border-2 border-white/20 text-white font-bold uppercase rounded-lg hover:border-brand-gold hover:text-brand-gold transition-all">
+                        Jugar Desafío
+                    </a>
+                </div>
+            </div>
+
+            <!-- Contenedor del Video -->
+            <div id="video-previa" class="lg:col-span-5">
+                <div class="relative rounded-2xl overflow-hidden border border-brand-gold/30 shadow-2xl shadow-brand-gold/10 group">
+                    <div class="aspect-w-9 aspect-h-16 w-full max-h-[500px] bg-black">
+                        <video class="w-full h-full object-cover rounded-2xl" controls autoplay muted loop playsinline>
+                            <source src="https://customer-w05z573h41g2g13z.cloudflarestream.com/b4b74542151aa00a8972f753c15d4d3b/downloads/default.mp4" type="video/mp4">
+                            Tu navegador no soporta reproducción de video.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Noticias de Apoyo -->
+    <section id="noticias" class="py-20 px-4 max-w-7xl mx-auto space-y-16">
+        <div class="text-center space-y-3">
+            <h2 class="text-4xl sm:text-6xl font-header font-bold uppercase tracking-wider text-white">
+                INFORMACIÓN DEL <span class="text-brand-gold">PARTIDO DECISIVO</span>
+            </h2>
+            <div class="w-24 h-1 bg-brand-gold mx-auto"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Texto 1 -->
+            <article class="reveal-card bg-brand-card rounded-2xl border border-white/10 overflow-hidden shadow-xl hover:border-brand-gold/50 transition-all duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="relative overflow-hidden h-56">
+                        <img src="https://lh3.googleusercontent.com/d/1yA_cR5eA9M0s0XWd4HwD2U-V8y1Q2W3E=s1000" alt="Plantel Colo-Colo Campeón" class="w-full h-full object-cover transition-transform duration-700 hover:scale-110">
+                        <span class="absolute top-3 left-3 bg-brand-red text-white text-xs font-bold px-2 py-1 rounded">TEXTO 1</span>
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <h3 class="text-2xl font-header font-bold tracking-wide text-brand-gold">
+                            ¿Dónde se jugará el encuentro decisivo?
+                        </h3>
+                        <p class="text-gray-300 text-sm leading-relaxed">
+                            El encuentro más destacado de la fecha 27 se disputará este domingo 8 de noviembre en el Estadio Bicentenario Nelson Oyarzún, ubicado en la ciudad de Chillán[cite: 1]. En este recinto, el "Cacique" buscará conseguir la victoria como visitante para abrochar su estrella número 35[cite: 1].
+                        </p>
+                    </div>
+                </div>
+                <div class="px-6 pb-6 text-xs text-gray-500 font-mono">
+                    Chillán • Fecha 27
+                </div>
+            </article>
+
+            <!-- Texto 2 -->
+            <article class="reveal-card bg-brand-card rounded-2xl border border-white/10 overflow-hidden shadow-xl hover:border-brand-gold/50 transition-all duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="relative overflow-hidden h-56">
+                        <img src="https://lh3.googleusercontent.com/d/1zB_dS6fB0N1t1YXe5IxE3V-W9z2R3X4F=s1000" alt="Vozinha Conferencia" class="w-full h-full object-cover transition-transform duration-700 hover:scale-110">
+                        <span class="absolute top-3 left-3 bg-brand-red text-white text-xs font-bold px-2 py-1 rounded">TEXTO 2</span>
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <h3 class="text-2xl font-header font-bold tracking-wide text-brand-gold">
+                            La declaración y momento de Vozinha
+                        </h3>
+                        <p class="text-gray-300 text-sm leading-relaxed">
+                            El experimentado guardameta caboverdiano de Colo-Colo, Vozinha, abordó la opción de consagrarse campeón este fin de semana[cite: 1]. El portero destacó la competitividad del fútbol chileno, su rápida adaptación al equipo y su deseo de pelear al máximo en Chillán para conseguir el título y jugar la Copa Libertadores[cite: 1].
+                        </p>
+                    </div>
+                </div>
+                <div class="px-6 pb-6 text-xs text-gray-500 font-mono">
+                    Rueda de prensa • Vozinha
+                </div>
+            </article>
+
+            <!-- Texto 3 -->
+            <article class="reveal-card bg-brand-card rounded-2xl border border-white/10 overflow-hidden shadow-xl hover:border-brand-gold/50 transition-all duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="relative overflow-hidden h-56">
+                        <img src="https://lh3.googleusercontent.com/d/1aC_eT7gC1P2u2ZYf6JyF4W-X0a3S4Y5G=s1000" alt="Colo-Colo vs Ñublense" class="w-full h-full object-cover transition-transform duration-700 hover:scale-110">
+                        <span class="absolute top-3 left-3 bg-brand-red text-white text-xs font-bold px-2 py-1 rounded">TEXTO 3</span>
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <h3 class="text-2xl font-header font-bold tracking-wide text-brand-gold">
+                            Expectativas en la definición del torneo
+                        </h3>
+                        <p class="text-gray-300 text-sm leading-relaxed">
+                            Colo-Colo lidera la tabla con 58 puntos y tiene la primera opción para levantar el título de la Liga de Primera 2026[cite: 1]. Sin embargo, en Ñublense, su director técnico Vicente Núñez declaró firmemente que buscarán evitar que el cuadro albo dé la vuelta olímpica en su estadio[cite: 1].
+                        </p>
+                    </div>
+                </div>
+                <div class="px-6 pb-6 text-xs text-gray-500 font-mono">
+                    Definición del campeonato
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Sección del Videojuego de Tarjetas -->
+    <section id="juego" class="py-20 px-4 bg-black/60 border-t border-b border-white/10">
+        <div class="max-w-5xl mx-auto space-y-8">
+            <div class="text-center space-y-3">
+                <h2 class="text-4xl sm:text-6xl font-header font-bold uppercase tracking-wider text-brand-gold">
+                    DESAFÍO DE TARJETAS <span class="text-white">LOS REALES</span>
+                </h2>
+                <p class="text-gray-400 text-sm max-w-xl mx-auto">
+                    Demuestra tu memoria y conocimiento sobre la definición del campeonato. Empareja los conceptos con sus respectivos datos.
+                </p>
+            </div>
+
+            <!-- Panel de Control / Stats del Juego -->
+            <div class="flex flex-wrap justify-between items-center bg-brand-card p-4 rounded-xl border border-white/10 gap-4">
+                <div class="flex gap-6 text-sm font-semibold uppercase tracking-wider">
+                    <div>Intentos: <span id="moves-count" class="text-brand-gold font-bold text-lg">0</span></div>
+                    <div>Parejas: <span id="pairs-count" class="text-brand-gold font-bold text-lg">0 / 6</span></div>
+                    <div>Tiempo: <span id="timer" class="text-brand-gold font-bold text-lg">0s</span></div>
+                </div>
+                <button id="reset-btn" class="px-5 py-2 bg-brand-gold text-black font-bold uppercase rounded-lg hover:bg-yellow-400 transition-colors text-sm">
+                    Reiniciar Juego
+                </button>
+            </div>
+
+            <!-- Grilla de Tarjetas (Tablero) -->
+            <div id="game-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 min-h-[380px]">
+                <!-- Las tarjetas se generan dinámicamente con JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal de Victoria -->
+    <div id="win-modal" class="fixed inset-0 bg-black/80 backdrop-blur-md flex items-center justify-center z-50 hidden opacity-0 transition-opacity duration-300">
+        <div class="bg-brand-card border-2 border-brand-gold p-8 rounded-2xl text-center max-w-md w-full mx-4 shadow-2xl space-y-6">
+            <h3 class="text-4xl font-header font-bold text-brand-gold uppercase tracking-wider">¡FELICITACIONES!</h3>
+            <p class="text-gray-200 text-sm">
+                Has completado el desafío de memoria de <span class="font-bold text-brand-gold">Los Reales</span> con éxito.
+            </p>
+            <div class="bg-black/50 p-4 rounded-lg space-y-1 text-sm">
+                <div>Intentos totales: <span id="modal-moves" class="text-brand-gold font-bold">0</span></div>
+                <div>Tiempo empleado: <span id="modal-time" class="text-brand-gold font-bold">0s</span></div>
+            </div>
+            <button id="modal-restart" class="w-full py-3 bg-brand-gold text-black font-bold uppercase rounded-lg hover:bg-yellow-400 transition-colors">
+                Jugar de Nuevo
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-white/10 text-center text-xs text-gray-500">
+        <p>© 2026 LOS REALES — Cobertura Especial Liga de Primera 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
